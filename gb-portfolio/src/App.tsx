@@ -1,14 +1,10 @@
 import "./App.css";
-import Theme from "./components/theme";
+import Navbar from "./components/navbar";
 
 function App() {
   return (
     <>
-      <h1>Portfolio GB</h1>
-      <div className="card">
-        <Theme />
-      </div>
-      <p className="read-the-docs">Click to switch themes</p>
+      <Navbar/>      
     </>
   );
 }
