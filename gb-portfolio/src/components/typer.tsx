@@ -5,6 +5,8 @@ function typer() {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed once, initially
+        "I am a Software Engineer",
+        1000,
         "I am a Full Stack Developer",
         1000,
         "I am a Frontend Developer",
