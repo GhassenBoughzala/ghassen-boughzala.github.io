@@ -5,13 +5,11 @@ function typer() {
     <TypeAnimation
       sequence={[
         // Same substring at the start will only be typed once, initially
-        "We produce food for Mice",
+        "I am a Full Stack Developer",
         1000,
-        "We produce food for Hamsters",
+        "I am a Frontend Developer",
         1000,
-        "We produce food for Guinea Pigs",
-        1000,
-        "We produce food for Chinchillas",
+        "I am a Backend Developer",
         1000,
       ]}
       wrapper="span"
