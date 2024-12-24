@@ -13,9 +13,6 @@ function navbar() {
               <a>Contact</a>
             </li>
             <li>
-              <a>Download my cv</a>
-            </li>
-            <li>
               <Theme />
             </li>
           </ul>

@@ -1,9 +1,10 @@
 import logo from "../assets/me.png";
 import Typer from "./typer";
+
 function hero() {
   return (
     <>
-      <div className="hero bg-base-200 min-h-screen">
+      <div className="hero bg-base-200">
         <div className="hero-content flex-col lg:flex-row">
           <img src={logo} className="max-w-sm rounded-lg w-48" />
           <div className="">

@@ -1,14 +1,15 @@
 import "./App.css";
+
 import Navbar from "./components/navbar";
-import Hero from "./components/hero";
 import Footer from "./components/footer";
+import Home from "./pages/home";
 
 function App() {
   return (
     <>
-      <Navbar/>       
-      <Hero/>   
-      <Footer/>    
+      <Navbar />
+      <Home />
+      <Footer />
     </>
   );
 }
