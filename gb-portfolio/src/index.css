@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Portfolio theme styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    font-family: 'Inter', sans-serif;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+  
+  .glass-effect {
+    @apply bg-black bg-opacity-20 backdrop-blur-lg border border-white border-opacity-20;
+  }
+  
+  .section-padding {
+    @apply py-16 px-4 md:px-8 lg:px-16;
+  }
+}

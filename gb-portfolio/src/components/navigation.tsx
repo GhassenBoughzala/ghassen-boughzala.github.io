@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import Theme from "./theme";
+import logo from "../assets/me.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -28,7 +30,7 @@ const Navigation = () => {
     }`}>
       <div className="navbar-start">
         <a href="#" className="btn btn-ghost text-xl font-bold gradient-text">
-          GB
+          <img src={logo} className="max-w-sm rounded-lg w-10" />
         </a>
       </div>
       
@@ -62,6 +64,7 @@ const Navigation = () => {
         >
           {isMobileMenuOpen ? <X /> : <Menu />}
         </button>
+        <Theme />
       </div>
       
       {/* Mobile menu */}
