@@ -51,7 +51,7 @@ const Skills = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Skills & <span className="gradient-text">Languages</span>
+            Skills & Languages
           </h2>
           <p className="text-xl text-base-content/70 max-w-2xl mx-auto">
             Technologies and languages I work with
