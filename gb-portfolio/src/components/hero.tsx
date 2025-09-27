@@ -9,10 +9,11 @@ const Hero = () => {
         <div className="max-w-4xl">
           {/* Profile Image */}
           <div className="avatar mb-8">
-            <div className="w-32 h-32 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2 mx-auto">
-              <div className="w-full h-full rounded-full bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-4xl font-bold text-primary-content">
-                <img src={logo} className="max-w-sm rounded-lg w-52" />
-              </div>
+            <div className="ring-primary ring-offset-base-100 w-24 rounded-full ring-2 ring-offset-2">
+              <img
+                src={logo}
+                className="max-w-sm rounded-lg w-52 border-black bg-transparent"
+              />
             </div>
           </div>
 

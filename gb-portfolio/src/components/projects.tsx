@@ -45,7 +45,7 @@ const Projects = () => {
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Featured <span className="gradient-text">Projects</span>
+            Featured Projects
           </h2>
           <p className="text-xl text-base-content/70 max-w-2xl mx-auto">
             Showcase of my technical projects and achievements

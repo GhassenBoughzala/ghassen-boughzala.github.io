@@ -66,32 +66,41 @@ const Experience = () => {
         <div className="timeline timeline-vertical">
           {experiences.map((exp, index) => (
             <div key={index} className="timeline-item">
-              <div className="timeline-box glass-effect m-3">
+              <div className="timeline-box glass-effect m-3 bg-transparent border-card-foreground">
                 <div className="card-body">
-                  <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-                    <div>
-                      <h3 className="card-title text-primary text-xl">
-                        {exp.company}
-                      </h3>
-                      <p className="text-secondary font-medium">{exp.role}</p>
-                      <p className="text-sm text-base-content/60">
-                        {exp.location}
-                      </p>
+                  <div className="collapse collapse-arrow border-0">
+                    <input type="radio" name="my-accordion-1" />
+                    <div className="collapse-title font-semibold">
+                      <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                        <div>
+                          <h3 className="card-title text-primary text-xl">
+                            {exp.company}
+                          </h3>
+                          <p className="text-secondary font-medium">
+                            {exp.role}
+                          </p>
+                          <p className="text-sm text-base-content/60">
+                            {exp.location}
+                          </p>
+                        </div>
+                        <div className="badge badge-info badge-lg mt-2 md:mt-0">
+                          {exp.period}
+                        </div>
+                      </div>
                     </div>
-                    <div className="badge badge-info badge-lg mt-2 md:mt-0">
-                      {exp.period}
+                    <div className="collapse-content text-sm">
+                      <ul className="space-y-2">
+                        {exp.achievements.map((achievement, i) => (
+                          <li key={i} className="flex items-start gap-2">
+                            <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                            <span className="text-base-content/80">
+                              {achievement}
+                            </span>
+                          </li>
+                        ))}
+                      </ul>
                     </div>
                   </div>
-                  <ul className="space-y-2">
-                    {exp.achievements.map((achievement, i) => (
-                      <li key={i} className="flex items-start gap-2">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <span className="text-base-content/80">
-                          {achievement}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
                 </div>
               </div>
             </div>

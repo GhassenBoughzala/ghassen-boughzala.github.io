@@ -90,9 +90,9 @@ export default {
     themes: [
       {
         portfolio: {
-          "primary": "#8b5cf6",
+          "primary": "#468A9A",
           "primary-content": "#ffffff",
-          "secondary": "#a855f7",
+          "secondary": "#468A9A",
           "secondary-content": "#ffffff",
           "accent": "#06b6d4",
           "accent-content": "#ffffff",
