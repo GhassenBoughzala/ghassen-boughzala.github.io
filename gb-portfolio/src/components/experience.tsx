@@ -54,7 +54,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="section-padding bg-base-200">
+    <section id="experience" className="section-padding bg-base-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
@@ -101,7 +101,7 @@ const Experience = () => {
                         <ul className="space-y-2">
                           {exp.achievements.map((achievement, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <div className="w-2 h-2 bg-black rounded-full mt-2 flex-shrink-0"></div>
+                              <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
                               <span className="text-base-content/80 text-left">
                                 {achievement}
                               </span>

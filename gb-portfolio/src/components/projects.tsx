@@ -60,7 +60,7 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="section-padding bg-base-200">
+    <section id="projects" className="section-padding bg-base-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
