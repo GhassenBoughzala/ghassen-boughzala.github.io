@@ -2,22 +2,19 @@
 import { useState, useEffect } from "react";
 
 function theme() {
-  const [themes, setThemes] = useState(
-    localStorage.getItem("theme") ? localStorage.getItem("theme") : "light"
+  const [themes, setTheme] = useState(
+    localStorage.getItem("theme") || "light"
   );
 
-  const toggleTheme = (e) => {
-    if (e.target.checked) {
-      setThemes("dark");
-    } else {
-      setThemes("light");
-    }
+  const changeTheme = (newTheme: string) => {
+    setTheme(newTheme);
+    localStorage.setItem("theme", newTheme); // Save the selected theme
+    document.querySelector("html")?.setAttribute("data-theme", newTheme); // Apply the theme
   };
 
   useEffect(() => {
-    localStorage.setItem("theme", themes);
-    const locaclTheme = localStorage.getItem("theme");
-    document.querySelector("html").setAttribute("data-theme", locaclTheme);
+    // Apply the saved theme on initial load
+    document.querySelector("html")?.setAttribute("data-theme", themes);
   }, [themes]);
 
   return (
@@ -26,8 +23,8 @@ function theme() {
         {/* this hidden checkbox controls the state */}
         <input
           type="checkbox"
-          onChange={toggleTheme}
-          checked={themes === "light" ? false : true}
+          onChange={(e) => changeTheme(e.target.checked ? "dark" : "light")}
+          checked={themes === "dark"}
         />
 
         {/* sun icon */}

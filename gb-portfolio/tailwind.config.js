@@ -1,6 +1,4 @@
-import type { Config } from "tailwindcss";
-
-export default {
+module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     container: {
@@ -12,102 +10,25 @@ export default {
     },
     extend: {
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
-        primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
-        },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
-        sidebar: {
-          DEFAULT: "hsl(var(--sidebar-background))",
-          foreground: "hsl(var(--sidebar-foreground))",
-          primary: "hsl(var(--sidebar-primary))",
-          "primary-foreground": "hsl(var(--sidebar-primary-foreground))",
-          accent: "hsl(var(--sidebar-accent))",
-          "accent-foreground": "hsl(var(--sidebar-accent-foreground))",
-          border: "hsl(var(--sidebar-border))",
-          ring: "hsl(var(--sidebar-ring))",
-        },
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
-      },
-      keyframes: {
-        "accordion-down": {
-          from: {
-            height: "0",
-          },
-          to: {
-            height: "var(--radix-accordion-content-height)",
-          },
-        },
-        "accordion-up": {
-          from: {
-            height: "var(--radix-accordion-content-height)",
-          },
-          to: {
-            height: "0",
-          },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
+        primary: "#21B754",
+        "primary-content": "#000000",
+        secondary: "#1DB78E",
+        "secondary-content": "#010D07",
+        accent: "#21B7AB",
+        "accent-content": "#010D0B",
+        neutral: "#19362E",
+        "neutral-content": "#CDD3D1",
+        info: "#3dd6ff",
+        success: "#23d18b",
+        warning: "#fdae2a",
+        error: "#ff6e6e",
       },
     },
   },
-  plugins: [require("tailwindcss-animate"), require("daisyui")],
   daisyui: {
     themes: [
-      {
-        portfolio: {
-          "primary": "#468A9A",
-          "primary-content": "#ffffff",
-          "secondary": "#468A9A",
-          "secondary-content": "#ffffff",
-          "accent": "#06b6d4",
-          "accent-content": "#ffffff",
-          "neutral": "#1f2937",
-          "neutral-content": "#ffffff",
-          "base-100": "#0f0b1f",
-          "base-200": "#1a1429",
-          "base-300": "#2d1b3d",
-          "base-content": "#ffffff",
-          "info": "#06b6d4",
-          "success": "#10b981",
-          "warning": "#f59e0b",
-          "error": "#ef4444",
-        },
-      },
+      "light", "dark",
     ],
   },
-} satisfies Config;
+  plugins: [require("daisyui")],
+}
