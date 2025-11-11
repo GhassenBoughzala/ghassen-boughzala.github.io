@@ -5,11 +5,10 @@ const Contact = () => {
     <section id="contact" className="section-padding bg-base-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Let's Connect
-          </h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
           <p className="text-xl text-base-content/70 max-w-2xl mx-auto">
-            Ready to collaborate on your next project? Let's discuss how I can help bring your ideas to life.
+            Ready to collaborate on your next project? Let's discuss how I can
+            help bring your ideas to life.
           </p>
         </div>
 
@@ -17,11 +16,14 @@ const Contact = () => {
           {/* Contact Information */}
           <div className="space-y-8">
             <div>
-              <h3 className="text-2xl font-bold mb-6 text-primary">Get In Touch</h3>
+              <h3 className="text-2xl font-bold mb-6 text-primary">
+                Get In Touch
+              </h3>
               <p className="text-base-content/70 mb-8 text-lg leading-relaxed">
-                I'm always interested in new opportunities and exciting projects. 
-                Whether you're looking for a full-stack developer or want to discuss 
-                potential collaborations, I'd love to hear from you.
+                I'm always interested in new opportunities and exciting
+                projects. Whether you're looking for a full-stack developer or
+                want to discuss potential collaborations, I'd love to hear from
+                you.
               </p>
             </div>
 
@@ -32,7 +34,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <a 
+                  <a
                     href="mailto:boughzala.ghassen@gmail.com"
                     className="text-primary hover:text-primary/80 transition-colors"
                   >
@@ -47,7 +49,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <p className="font-medium">Phone</p>
-                  <a 
+                  <a
                     href="tel:+351931424958"
                     className="text-secondary hover:text-secondary/80 transition-colors"
                   >
@@ -71,19 +73,19 @@ const Contact = () => {
             <div className="pt-6">
               <p className="font-medium mb-4">Connect with me:</p>
               <div className="flex gap-4">
-                <a 
+                <a
                   href="https://linkedin.com/in/boughzala-ghassen"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-primary"
+                  className="btn btn-circle btn-accent"
                 >
                   <Linkedin size={20} />
                 </a>
-                <a 
+                <a
                   href="https://github.com/GhassenBoughzala"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-secondary"
+                  className="btn btn-circle btn-accent"
                 >
                   <Github size={20} />
                 </a>
@@ -94,52 +96,54 @@ const Contact = () => {
           {/* Contact Form */}
           <div className="card bg-base-200 shadow-xl">
             <div className="card-body">
-              <h3 className="card-title text-2xl mb-6 text-primary">Send a Message</h3>
+              <h3 className="card-title text-2xl mb-6 text-primary">
+                Send a Message
+              </h3>
               <form className="space-y-6">
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text font-medium">Name</span>
                   </label>
-                  <input 
-                    type="text" 
-                    placeholder="Your name" 
-                    className="input input-bordered w-full focus:input-primary" 
+                  <input
+                    type="text"
+                    placeholder="Your name"
+                    className="input input-bordered w-full focus:input-primary"
                   />
                 </div>
-                
+
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text font-medium">Email</span>
                   </label>
-                  <input 
-                    type="email" 
-                    placeholder="your.email@example.com" 
-                    className="input input-bordered w-full focus:input-primary" 
+                  <input
+                    type="email"
+                    placeholder="your.email@example.com"
+                    className="input input-bordered w-full focus:input-primary"
                   />
                 </div>
-                
+
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text font-medium">Subject</span>
                   </label>
-                  <input 
-                    type="text" 
-                    placeholder="Project discussion" 
-                    className="input input-bordered w-full focus:input-primary" 
+                  <input
+                    type="text"
+                    placeholder="Project discussion"
+                    className="input input-bordered w-full focus:input-primary"
                   />
                 </div>
-                
+
                 <div className="form-control">
                   <label className="label">
                     <span className="label-text font-medium">Message</span>
                   </label>
-                  <textarea 
-                    className="textarea textarea-bordered h-32 w-full focus:textarea-primary" 
+                  <textarea
+                    className="textarea textarea-bordered h-32 w-full focus:textarea-primary"
                     placeholder="Tell me about your project..."
                   ></textarea>
                 </div>
-                
-                <button type="submit" className="btn btn-primary w-full">
+
+                <button type="submit" className="btn bg-primary w-full">
                   Send Message
                 </button>
               </form>

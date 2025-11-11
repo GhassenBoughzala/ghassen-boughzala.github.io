@@ -13,6 +13,7 @@ module.exports = {
         primary: "#21B754",
         "primary-content": "#000000",
         secondary: "#1DB78E",
+        "btn-color" : "#21B754",
         "secondary-content": "#010D07",
         accent: "#21B7AB",
         "accent-content": "#010D0B",

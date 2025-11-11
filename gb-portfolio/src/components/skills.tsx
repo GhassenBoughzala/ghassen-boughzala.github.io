@@ -65,7 +65,7 @@ const Skills = () => {
               key={index}
               className="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow"
             >
-              <div className="card-body">
+              <div className="card-body text-center">
                 <div className="text-4xl mb-4 text-center">{category.icon}</div>
                 <h3 className="card-title text-center text-primary mb-4">
                   {category.title}
@@ -83,7 +83,7 @@ const Skills = () => {
         </div>
 
         {/* Languages */}
-        <div className="card bg-base-200 shadow-lg">
+{/*         <div className="card bg-base-200 shadow-lg">
           <div className="card-body">
             <h3 className="card-title text-2xl text-primary mb-6 justify-center">
               🌍 Languages
@@ -104,7 +104,8 @@ const Skills = () => {
               ))}
             </div>
           </div>
-        </div>
+        </div> */}
+
       </div>
     </section>
   );
