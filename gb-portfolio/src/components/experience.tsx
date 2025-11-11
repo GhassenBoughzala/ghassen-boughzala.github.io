@@ -57,7 +57,7 @@ const Experience = () => {
     <section id="experience" className="section-padding bg-base-200">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
             Work Experience
           </h2>
           <p className="text-xl text-base-content/70 max-w-2xl mx-auto">

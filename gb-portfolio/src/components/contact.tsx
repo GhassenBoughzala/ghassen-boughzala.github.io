@@ -77,7 +77,7 @@ const Contact = () => {
                   href="https://linkedin.com/in/boughzala-ghassen"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-accent"
+                  className="btn btn-circle bg-secondary"
                 >
                   <Linkedin size={20} />
                 </a>
@@ -85,7 +85,7 @@ const Contact = () => {
                   href="https://github.com/GhassenBoughzala"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="btn btn-circle btn-accent"
+                  className="btn btn-circle bg-secondary"
                 >
                   <Github size={20} />
                 </a>

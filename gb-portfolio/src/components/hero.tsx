@@ -21,13 +21,26 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
             Hello, I'm <span className="gradient-text">Ghassen Boughzala</span>
           </h1>
-{/*           <h4 className="text-primary font-semibold">
+          {/*         
+          <h4 className="text-primary font-semibold">
             <Typer />
-          </h4> */}
+          </h4> 
+          
+                      <span className="text-rotate text-secondary">
+              <span className="justify-items-center">
+                <span>I am a Software Engineer</span>
+                <span>I am a Full Stack Developer</span>
+                <span>I am a Frontend Developer</span>
+                <span>I am a Backend Developer</span>
+              </span>
+            </span>
+          
+          */}
+
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-base-content/70 leading-relaxed">
-            I am a Software Engineer with expertise in Java, Spring Boot, Angular, and React. I
-            specialize in building scalable backend services and creating
-            exceptional user experiences.
+            I am a Software Engineer with expertise in Java, Spring Boot,
+            Angular, and React. I specialize in building scalable backend
+            services and creating exceptional user experiences.
           </p>
 
           {/* Contact Info */}
@@ -57,10 +70,7 @@ const Hero = () => {
               <Github size={20} />
               GitHub
             </a>
-            <a
-              href="tel:+351931424958"
-              className="btn btn-outline gap-2"
-            >
+            <a href="tel:+351931424958" className="btn btn-outline gap-2">
               <Phone size={20} />
               +351 931 424 958
             </a>

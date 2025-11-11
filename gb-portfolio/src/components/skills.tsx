@@ -25,17 +25,7 @@ const Skills = () => {
     },
     {
       title: "Tools & Others",
-      skills: [
-        "GitHub",
-        "GitLab",
-        "Docker",
-        "Jira",
-        "Kafka",
-        "Agile Methodology",
-        "Scrum",
-        "Redux",
-        "JUnit",
-      ],
+      skills: ["GitHub", "GitLab", "Docker", "Jira", "Kafka", "Redux", "JUnit"],
       icon: "🛠️",
     },
   ];
@@ -50,7 +40,7 @@ const Skills = () => {
     <section id="skills" className="section-padding bg-base-100">
       <div className="container mx-auto max-w-6xl">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-secondary">
             Skills & Languages
           </h2>
           <p className="text-xl text-base-content/70 max-w-2xl mx-auto">
@@ -61,21 +51,24 @@ const Skills = () => {
         {/* Technical Skills */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {skillCategories.map((category, index) => (
-            <div
-              key={index}
-              className="card bg-base-200 shadow-lg hover:shadow-xl transition-shadow"
-            >
-              <div className="card-body text-center">
-                <div className="text-4xl mb-4 text-center">{category.icon}</div>
-                <h3 className="card-title text-center text-primary mb-4">
+            <div key={index} className="stats bg-base-100 border-base-400 border shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+              <div className="stat">
+                <div className="stat-title"></div>
+                <div className="stat-value text-base text-wrap my-3">
                   {category.title}
-                </h3>
-                <div className="flex flex-wrap gap-2 justify-center">
-                  {category.skills.map((skill, i) => (
-                    <div key={i} className="badge badge-outline badge-primary">
-                      {skill}
-                    </div>
-                  ))}
+                </div>
+                <div className="stat-desc"></div>
+                <div className="stat-figure text-primary">
+                  <div className="text-4xl">{category.icon}</div>
+                </div>
+                <div className="stat-desc">
+                  <div className="flex flex-wrap gap-2">
+                    {category.skills.map((skill, i) => (
+                      <div key={i} className="badge badge-outline">
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
@@ -83,7 +76,7 @@ const Skills = () => {
         </div>
 
         {/* Languages */}
-{/*         <div className="card bg-base-200 shadow-lg">
+        {/*         <div className="card bg-base-200 shadow-lg">
           <div className="card-body">
             <h3 className="card-title text-2xl text-primary mb-6 justify-center">
               🌍 Languages
@@ -105,7 +98,6 @@ const Skills = () => {
             </div>
           </div>
         </div> */}
-
       </div>
     </section>
   );
