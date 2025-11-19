@@ -51,7 +51,7 @@ const Skills = () => {
         {/* Technical Skills */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
           {skillCategories.map((category, index) => (
-            <div key={index} className="stats bg-base-100 border-base-400 border shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+            <div key={index} className="stats bg-base-100 border-base-200 border shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
               <div className="stat">
                 <div className="stat-title"></div>
                 <div className="stat-value text-base text-wrap my-3">

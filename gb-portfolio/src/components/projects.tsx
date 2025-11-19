@@ -75,7 +75,7 @@ const Projects = () => {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2"
+              className="card bg-base-100 shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 border-primary/20 border"
             >
               <div className="card-body">
                 <div className="flex items-center justify-between mb-4">

@@ -1,4 +1,5 @@
 import { Eye } from "lucide-react";
+import "./ui/box.css";
 
 const Experience = () => {
   const experiences = [
@@ -72,7 +73,7 @@ const Experience = () => {
                 <li>
                   <div className="timeline-middle">
                     <button
-                      className="btn btn-circle hover:none"
+                      className="btn btn-circle hover:none heartbeat-border border-white"
                       onClick={() =>
                         (
                           document.getElementById(
@@ -92,7 +93,7 @@ const Experience = () => {
                     } mb-10`}
                   >
                     <time className="font-mono italic">{exp.period}</time>
-                    <div className="text-lg font-black">
+                    <div className="text-lg font-black px-1">
                       {exp.company} - {exp.location}
                     </div>
                     <div className="text-md">{exp.role}</div>
