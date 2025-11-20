@@ -1,22 +1,91 @@
 import logo from "../assets/me.png";
 import Typer from "./typer";
+import { Github, Linkedin, Mail, Phone } from "lucide-react";
 
-function hero() {
+const Hero = () => {
   return (
-    <>
-      <div className="hero bg-base-200">
-        <div className="hero-content flex-col lg:flex-row">
-          <img src={logo} className="max-w-sm rounded-lg w-48" />
-          <div className="">
-            {/* <h1 className="text-5xl font-bold">Hello !</h1> */}
-            <h1 className="font-sans text-3xl font-bold">This is Ghassen Boughzala</h1>
-            <Typer />
-           
+    <section className="hero min-h-screen bg-gradient-to-br from-base-100 to-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-4xl">
+          {/* Profile Image */}
+          <div className="avatar mb-8">
+            <div className="w-32 rounded-full ring ring-accent ring-offset-base-100 ring-offset-2 animate-float">
+              <img
+                src={logo}
+                className="max-w-sm rounded-lg w-52 border-black bg-transparent"
+              />
+            </div>
           </div>
+
+          {/* Main Content */}
+          <h1 className="text-5xl md:text-7xl font-bold mb-4">
+            Hello, I'm <span className="gradient-text">Ghassen Boughzala</span>
+          </h1>
+          {/*         
+          <h4 className="text-primary font-semibold">
+            <Typer />
+          </h4> 
+          
+                      <span className="text-rotate text-secondary">
+              <span className="justify-items-center">
+                <span>I am a Software Engineer</span>
+                <span>I am a Full Stack Developer</span>
+                <span>I am a Frontend Developer</span>
+                <span>I am a Backend Developer</span>
+              </span>
+            </span>
+          
+          */}
+
+          <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-base-content/70 leading-relaxed">
+            I am a Software Engineer with expertise in Java, Spring Boot,
+            Angular, and React. I specialize in building scalable backend
+            services and creating exceptional user experiences.
+          </p>
+
+          {/* Contact Info */}
+          <div className="flex flex-wrap justify-center gap-4 mb-8">
+            <a
+              href="mailto:boughzala.ghassen@gmail.com"
+              className="btn btn-outline gap-2"
+            >
+              <Mail size={20} />
+              Email
+            </a>
+            <a
+              href="https://linkedin.com/in/boughzala-ghassen"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline gap-2"
+            >
+              <Linkedin size={20} />
+              LinkedIn
+            </a>
+            <a
+              href="https://github.com/GhassenBoughzala"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline gap-2"
+            >
+              <Github size={20} />
+              GitHub
+            </a>
+            <a href="tel:+351931424958" className="btn btn-outline gap-2">
+              <Phone size={20} />
+              +351 931 424 958
+            </a>
+          </div>
+
+          {/* CTA Button */}
+          {/* 
+          <a href="#experience" className="btn btn-error btn-lg">
+            View My Work
+          </a>
+           */}
         </div>
       </div>
-    </>
+    </section>
   );
-}
+};
 
-export default hero;
+export default Hero;

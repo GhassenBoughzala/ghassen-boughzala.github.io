@@ -1,16 +1,26 @@
-import Hero from "../components/hero";
+import Navigation from "@/components/navigation";
+import Hero from "@/components/hero";
+import Experience from "@/components/experience";
+import Skills from "@/components/skills";
+import Projects from "@/components/projects";
+import Education from "@/components/education";
+import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 function home() {
   return (
-    <>
-      <Hero />
-      <div className="hero bg-base-100">
-        <div className="max-w-sm hero-content flex-col lg:flex-row">
-          <h1 className="font-sans text-4xl font-bold">ABOUT ME</h1>
-          <p>Hi</p>
-        </div>
-      </div>
-    </>
+    <div className="min-h-screen">
+      <Navigation />
+      <main>
+        <Hero />
+        <Experience />
+        <Skills />
+        <Projects />
+        <Education />
+        <Contact />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
