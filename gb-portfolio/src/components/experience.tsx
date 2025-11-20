@@ -88,9 +88,9 @@ const Experience = () => {
                   <div
                     className={`${
                       index % 2 === 0
-                        ? "timeline-start mb-10 md:text-end"
-                        : "timeline-end mb-10 md:text-end"
-                    } mb-10`}
+                        ? "timeline-start md:text-end"
+                        : "timeline-end md:text-end"
+                    } m-10`}
                   >
                     <time className="font-mono italic">{exp.period}</time>
                     <div className="text-lg font-black px-1">
@@ -102,7 +102,7 @@ const Experience = () => {
                         <ul className="space-y-2">
                           {exp.achievements.map((achievement, i) => (
                             <li key={i} className="flex items-start gap-2">
-                              <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                              <div className="w-2 h-2 bg-primary rounded-full flex-shrink-0"></div>
                               <span className="text-base-content/80 text-left">
                                 {achievement}
                               </span>
