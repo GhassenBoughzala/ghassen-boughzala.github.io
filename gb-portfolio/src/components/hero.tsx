@@ -1,6 +1,6 @@
 import logo from "../assets/me.png";
 import Typer from "./typer";
-import { Github, Linkedin, Mail, Phone } from "lucide-react";
+import { Download, Github, Linkedin, Mail, Phone } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -21,26 +21,17 @@ const Hero = () => {
           <h1 className="text-5xl md:text-7xl font-bold mb-4">
             Hello, I'm <span className="gradient-text">Ghassen Boughzala</span>
           </h1>
-          {/*         
-          <h4 className="text-primary font-semibold">
+
+          <div className="h-10 mb-6 flex justify-center">
             <Typer />
-          </h4> 
-          
-                      <span className="text-rotate text-secondary">
-              <span className="justify-items-center">
-                <span>I am a Software Engineer</span>
-                <span>I am a Full Stack Developer</span>
-                <span>I am a Frontend Developer</span>
-                <span>I am a Backend Developer</span>
-              </span>
-            </span>
-          
-          */}
+          </div>
 
           <p className="text-lg md:text-xl max-w-2xl mx-auto mb-8 text-base-content/70 leading-relaxed">
-            I am a Software Engineer with expertise in Java, Spring Boot,
-            Angular, and React. I specialize in building scalable backend
-            services and creating exceptional user experiences.
+            Software Engineer with 3+ years building scalable, secure backend
+            services and modern web apps with Java, Spring Boot, Angular and
+            React. I turn complex requirements into performant, well-tested
+            systems &mdash; from event-driven banking platforms to 95% test
+            coverage.
           </p>
 
           {/* Contact Info */}
@@ -76,12 +67,20 @@ const Hero = () => {
             </a>
           </div>
 
-          {/* CTA Button */}
-          {/* 
-          <a href="#experience" className="btn btn-error btn-lg">
-            View My Work
-          </a>
-           */}
+          {/* CTA Buttons */}
+          <div className="flex flex-wrap justify-center gap-4">
+            <a href="#experience" className="btn btn-primary btn-lg gap-2">
+              View My Work
+            </a>
+            <a
+              href="/Ghassen_Boughzala_CV.pdf"
+              download
+              className="btn btn-outline btn-lg gap-2"
+            >
+              <Download size={20} />
+              Download CV
+            </a>
+          </div>
         </div>
       </div>
     </section>

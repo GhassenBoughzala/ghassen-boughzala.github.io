@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { Menu, X, Phone, Mail, Linkedin } from "lucide-react";
+import { Menu, X, Mail, Linkedin, Download } from "lucide-react";
 import Theme from "./theme";
 import logo from "../assets/me.png";
 
@@ -70,6 +70,14 @@ const Navigation = () => {
         </a>
         <a href="mailto:boughzala.ghassen@gmail.com">
           <Mail className="m-2" size={18} />
+        </a>
+        <a
+          href="/Ghassen_Boughzala_CV.pdf"
+          download
+          className="btn btn-primary btn-sm gap-1 hidden sm:inline-flex"
+        >
+          <Download size={16} />
+          CV
         </a>
         <Theme />
       </div>

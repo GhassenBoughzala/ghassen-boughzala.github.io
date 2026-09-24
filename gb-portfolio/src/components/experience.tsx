@@ -9,9 +9,9 @@ const Experience = () => {
       period: "04/2025 - Current",
       role: "Full Stack Developer",
       achievements: [
-        "Collaborating with cross-functional teams at KLx to design scalable backend services and enhance user-facing features.",
-        "Developing end-to-end banking service solutions using Java 21, Spring Boot, and Angular, with a strong focus on performance, scalability, and security.",
-        "Optimizing transactional systems and account services by designing RESTful APIs, enforcing strict access controls, and integrating robust PostgreSQL queries.",
+        "Design and build end-to-end banking solutions with Java 21, Spring Boot and Angular, prioritising performance, scalability and security.",
+        "Deliver RESTful account and transaction APIs with strict access controls and optimised PostgreSQL queries.",
+        "Collaborate with cross-functional teams to design scalable backend services and enhance user-facing features.",
       ],
     },
     {
@@ -20,13 +20,12 @@ const Experience = () => {
       period: "12/2022 - 04/2025",
       role: "Full Stack Developer",
       achievements: [
-        "Developed more than 70 user stories leading to an increase of job performance.",
-        "Implemented the CQRS event-based architecture using Axon framework to handle and publish 15 events from different projects.",
-        "Accomplished migration to Java 17, SpringBoot 3 and Elasticsearch 8.",
-        "Created over 300 unit and integration tests using the TDD approach.",
-        "Achieved to improve code coverage from 10% to 95%, resolved bugs and issues vulnerabilities on SonarQube.",
-        "Developed over 30 advanced database index configurations, resulting in a 40% increase in website loading speed.",
-        "Spearheaded the integration of Kafka into the existing architecture, optimizing message delivery and ensuring high availability.",
+        "Delivered 70+ user stories, directly improving product performance and team velocity.",
+        "Implemented an event-driven CQRS architecture with the Axon framework, publishing 15 domain events across projects.",
+        "Led the migration to Java 17, Spring Boot 3 and Elasticsearch 8.",
+        "Wrote 300+ unit and integration tests using TDD, raising code coverage from 10% to 95% and resolving SonarQube bugs and vulnerabilities.",
+        "Tuned 30+ database indexes, improving page-load speed by 40%.",
+        "Integrated Apache Kafka into the existing architecture, optimising message delivery and high availability.",
       ],
     },
     {
@@ -35,10 +34,10 @@ const Experience = () => {
       period: "08/2022 - 11/2022",
       role: "Full Stack Developer",
       achievements: [
-        "Restructured a web platform that allows over 100 students to view and book courses offered by a language training center.",
-        "Facilitated over 5 new features and addition of a portal payment using Stripe Connect to book courses.",
-        "Succeeded to migrate from Wordpress to a ReactJs and NodeJs.",
-        "Established an admin dashboard for managing courses, users and scholarships.",
+        "Rebuilt a course-booking platform serving 100+ students for a language-training centre.",
+        "Migrated the product from WordPress to a React and Node.js stack.",
+        "Added 5 features including Stripe Connect payments for course booking.",
+        "Built an admin dashboard to manage courses, users and scholarships.",
       ],
     },
     {
@@ -47,9 +46,9 @@ const Experience = () => {
       period: "06/2022 - 08/2022",
       role: "Full Stack Developer",
       achievements: [
-        "Implemented a client application for a company specializing in marketing of clothing supplies with more 150 product.",
-        "Maintained a product lifecycle management process, leading to a 25% reduction in product development cycle time.",
-        "Engineered a high-performing webpack configuration that optimized build time by 45%.",
+        "Built a client application for a clothing-supplies marketing company managing 150+ products.",
+        "Streamlined the product lifecycle process, cutting development cycle time by 25%.",
+        "Engineered a high-performance Webpack configuration that reduced build time by 45%.",
       ],
     },
   ];

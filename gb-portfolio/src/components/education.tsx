@@ -1,6 +1,12 @@
 import { GraduationCap, Award, Users } from "lucide-react";
 
 const Education = () => {
+  const languages = [
+    { language: "Arabic", level: "Native", progress: 100 },
+    { language: "French", level: "Bilingual", progress: 95 },
+    { language: "English", level: "Bilingual", progress: 95 },
+  ];
+
   const interests = [
     {
       title: "Rotaract Club Leadership",
@@ -56,10 +62,40 @@ const Education = () => {
                   </p>
 
                   <p className="text-base-content/80">
-                    Comprehensive education in computer engineering with focus
+                    Comprehensive education in computer engineering with a focus
                     on software development, system design, and modern
                     programming technologies.
                   </p>
+
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <span className="badge badge-outline">Software Development</span>
+                    <span className="badge badge-outline">System Design</span>
+                    <span className="badge badge-outline">Algorithms</span>
+                    <span className="badge badge-outline">Databases</span>
+                  </div>
+                </div>
+
+                <div className="divider my-2"></div>
+
+                <div>
+                  <h4 className="text-lg font-semibold mb-3">Languages</h4>
+                  <div className="space-y-3">
+                    {languages.map((lang, index) => (
+                      <div key={index}>
+                        <div className="flex justify-between mb-1">
+                          <span className="font-medium">{lang.language}</span>
+                          <span className="text-base-content/60 text-sm">
+                            {lang.level}
+                          </span>
+                        </div>
+                        <progress
+                          className="progress progress-primary w-full"
+                          value={lang.progress}
+                          max="100"
+                        ></progress>
+                      </div>
+                    ))}
+                  </div>
                 </div>
               </div>
             </div>
